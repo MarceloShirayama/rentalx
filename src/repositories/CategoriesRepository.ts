@@ -16,7 +16,7 @@ export class CategoriesRepository {
     return this.categories
   }
 
-  findByName ({ name }: CreateCategoryDTO): Category | undefined {
+  findByName (name: string) {
     const category = this.categories.find(category => category.name === name)
 
     return category
