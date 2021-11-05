@@ -1,6 +1,6 @@
-import { CreateCategoryDTO } from '../DTO/categoryDTO'
+import { CreateCategoryDTO, ICategoriesRepository } from '../DTO/categoryDTO'
 import { Category } from '../model/Category'
-export class CategoriesRepository {
+export class CategoriesRepository implements ICategoriesRepository {
   private categories: Category[]
 
   constructor () {

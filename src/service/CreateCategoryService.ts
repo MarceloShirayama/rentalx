@@ -1,14 +1,8 @@
-import { CategoriesRepository } from '../repositories/CategoriesRepository'
-
-type RequestCategoryType = {
-  name: string
-  description: string
-}
-
+import { ICategoriesRepository, RequestCategoryType } from '../DTO/categoryDTO'
 export class CreateCategoryService {
-  private categoriesRepository: CategoriesRepository
+  private categoriesRepository: ICategoriesRepository
 
-  constructor (categoriesRepository: CategoriesRepository) {
+  constructor (categoriesRepository: ICategoriesRepository) {
     this.categoriesRepository = categoriesRepository
   }
 
