@@ -11,4 +11,8 @@ export class CategoriesRepository {
     const category = new Category(name, description)
     this.categories.push(category)
   }
+
+  list (): Category[] {
+    return this.categories
+  }
 }

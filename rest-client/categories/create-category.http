@@ -6,6 +6,15 @@ POST {{url_base}}/{{path}}
 Content-Type: application/json
 
 {
-  "name": "SW4",
-  "description": "categortia SUV"
+  "name": "SUV",
+  "description": "categoria utilitário"
+}
+
+###
+POST {{url_base}}/{{path}}
+Content-Type: application/json
+
+{
+  "name": "Sedan",
+  "description": "categoria carro de passeio"
 }
