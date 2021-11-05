@@ -1,0 +1,9 @@
+@url_base=http://3333/courses
+
+###
+POST {{url_base}}
+Content-Type: application/json
+
+{
+  "name": "Ignite"
+}
