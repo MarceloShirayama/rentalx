@@ -1,10 +1,5 @@
+import { CreateCategoryDTO } from '../DTO/categoryDTO'
 import { Category } from '../model/Category'
-
-type CreateCategoryDTO = {
-  name: string
-  description: string
-}
-
 export class CategoriesRepository {
   private categories: Category[]
 
