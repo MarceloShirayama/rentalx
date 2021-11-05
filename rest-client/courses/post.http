@@ -1,4 +1,4 @@
-@url_base=http://3333/courses
+@url_base=http://localhost:3333/courses
 
 ###
 POST {{url_base}}
