@@ -1,0 +1,11 @@
+@url_base=http://localhost:3333
+@path=categories
+
+###
+POST {{url_base}}/{{path}}
+Content-Type: application/json
+
+{
+  "name": "SW4",
+  "description": "categortia SUV"
+}
