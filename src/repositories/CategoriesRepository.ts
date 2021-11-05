@@ -15,4 +15,10 @@ export class CategoriesRepository {
   list (): Category[] {
     return this.categories
   }
+
+  findByName ({ name }: CreateCategoryDTO): Category | undefined {
+    const category = this.categories.find(category => category.name === name)
+
+    return category
+  }
 }
