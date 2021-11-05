@@ -1,4 +1,4 @@
-import { ICategoriesRepository, RequestCategoryType } from '../DTO/categoryDTO'
+import { ICategoriesRepository, RequestCategoryType } from '../types/category'
 export class CreateCategoryService {
   private categoriesRepository: ICategoriesRepository
 

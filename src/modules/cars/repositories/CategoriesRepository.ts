@@ -1,4 +1,4 @@
-import { CreateCategoryDTO, ICategoriesRepository } from '../DTO/categoryDTO'
+import { CreateCategoryDTO, ICategoriesRepository } from '../types/category'
 import { Category } from '../model/Category'
 export class CategoriesRepository implements ICategoriesRepository {
   private categories: Category[]
