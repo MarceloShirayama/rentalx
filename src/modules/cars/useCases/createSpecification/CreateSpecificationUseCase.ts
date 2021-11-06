@@ -1,8 +1,8 @@
 import {
   ISpecificationsRepository, RequestSpecificationType
-} from '../types/specification'
+} from '../../types/specification'
 
-export class CreateSpecificationService {
+export class CreateSpecificationUseCase {
   private specificationsRepository: ISpecificationsRepository
 
   constructor (specificationsRepository: ISpecificationsRepository) {
