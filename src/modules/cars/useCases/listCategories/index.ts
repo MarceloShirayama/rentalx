@@ -1,8 +1,8 @@
-import { CategoriesRepository } from '../../repositories/CategoriesRepository'
+import { SpecificationsRepository } from '../../repositories/SpecificationsRepository'
 import { ListCategoriesController } from './ListCategoriesController'
 import { ListCategoryUseCase } from './ListCategoryUseCase'
 
-const categoriesRepository = CategoriesRepository.getInstance()
+const categoriesRepository = SpecificationsRepository.getInstance()
 
 const listCategoryUseCase = new ListCategoryUseCase(categoriesRepository)
 
