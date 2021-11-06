@@ -1,4 +1,4 @@
-import { CreateCategoryDTO, ICategoriesRepository } from '../types/category'
+import { CategoryDataDTO, ICategoriesRepository } from '../types/category'
 import { Category } from '../model/Category'
 export class CategoriesRepository implements ICategoriesRepository {
   private categories: Category[]
@@ -15,7 +15,7 @@ export class CategoriesRepository implements ICategoriesRepository {
     return CategoriesRepository.INSTANCE
   }
 
-  create ({ name, description }: CreateCategoryDTO): void {
+  create ({ name, description }: CategoryDataDTO): void {
     const category = new Category(name, description)
     this.categories.push(category)
   }

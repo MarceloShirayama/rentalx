@@ -1,4 +1,4 @@
-import { ICategoriesRepository, RequestCategoryType } from '../../types/category'
+import { ICategoriesRepository, CategoryDataDTO } from '../../types/category'
 
 export class CreateCategoryUseCase {
   private categoriesRepository: ICategoriesRepository
@@ -7,7 +7,7 @@ export class CreateCategoryUseCase {
     this.categoriesRepository = categoriesRepository
   }
 
-  execute ({ name, description }: RequestCategoryType): void {
+  execute ({ name, description }: CategoryDataDTO): void {
     const categoryAlreadyExists = this.categoriesRepository.findByName(name)
 
     if (categoryAlreadyExists) {

@@ -1,6 +1,6 @@
 import { Category } from '../model/Category'
 
-export type CreateCategoryDTO = {
+export type CategoryDataDTO = {
   name: string
   description: string
 }
@@ -8,10 +8,5 @@ export type CreateCategoryDTO = {
 export interface ICategoriesRepository {
   findByName(name:string): Category | undefined
   list(): Category[]
-  create({ name, description }: CreateCategoryDTO): void
-}
-
-export type RequestCategoryType = {
-  name: string
-  description: string
+  create({ name, description }: CategoryDataDTO): void
 }
