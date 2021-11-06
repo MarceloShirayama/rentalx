@@ -1,7 +1,7 @@
 import { Category } from '../../model/Category'
 import { ICategoriesRepository } from '../../types/category'
 
-export class ListCategoryUseCase {
+export class ListCategoriesUseCase {
   // eslint-disable-next-line no-useless-constructor
   constructor (private categoriesRepository: ICategoriesRepository) {}
 
