@@ -1,5 +1,6 @@
-import { ICategoriesRepository, RequestCategoryType } from '../types/category'
-export class CreateCategoryService {
+import { ICategoriesRepository, RequestCategoryType } from '../../types/category'
+
+export class CreateCategoryUseCase {
   private categoriesRepository: ICategoriesRepository
 
   constructor (categoriesRepository: ICategoriesRepository) {
