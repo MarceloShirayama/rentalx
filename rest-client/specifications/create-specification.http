@@ -1,0 +1,20 @@
+@url_base=http://localhost:3333
+@path=specifications
+
+###
+POST {{url_base}}/{{path}}
+Content-Type: application/json
+
+{
+  "name": "Câmbio automático",
+  "description": "veículo com câmbio automático"
+}
+
+###
+POST {{url_base}}/{{path}}
+Content-Type: application/json
+
+{
+  "name": "Teto solar",
+  "description": "veículo com teto solar"
+}

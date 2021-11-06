@@ -5,7 +5,7 @@ export type CreateSpecificationDTO = {
   description: string
 }
 
-export interface ICategoriesRepository {
+export interface ISpecificationsRepository {
   findByName(name:string): Specification | undefined
   list(): Specification[]
   create({ name, description }: CreateSpecificationDTO): void
