@@ -5,7 +5,8 @@
   "main": "src/server.ts",
   "scripts": {
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn .",
-    "typeorm": "ts-node-dev ./node_modules/.bin/typeorm"
+    "migration:create": "ts-node-dev ./node_modules/.bin/typeorm migration:create -- -n",
+    "migration:run": "ts-node-dev ./node_modules/.bin/typeorm migration:run"
   },
   "keywords": [],
   "author": "",
