@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/server.ts",
   "scripts": {
-    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn ."
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn .",
+    "typeorm": "ts-node-dev ./node_modules/.bin/typeorm"
   },
   "keywords": [],
   "author": "",

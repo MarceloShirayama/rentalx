@@ -3,6 +3,7 @@
         "openapi",
         "Rentalx",
         "respawn",
-        "typeorm"
+        "typeorm",
+        "varchar"
     ]
 }
