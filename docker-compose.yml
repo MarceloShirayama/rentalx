@@ -1,6 +1,19 @@
 version: "3.7"
 
 services:
+  database:
+    image: postgres
+    container_name: rentalx-postgres
+    restart: "always"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: rentalx
+      POSTGRES_PASSWORD: rentalx
+      POSTGRES_DB: rentalx
+    network_mode: host
   app:
     build: .
     container_name: rentalx
@@ -8,3 +21,7 @@ services:
       - 3333:3333
     volumes:
       - .:/usr/app
+    network_mode: host
+volumes:
+  pg_data:
+    driver: local
