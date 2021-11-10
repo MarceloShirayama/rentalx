@@ -22,6 +22,10 @@ services:
     volumes:
       - .:/usr/app
     network_mode: host
+    links:
+      - database
+    depends_on:
+      - database
 volumes:
   pg_data:
     driver: local

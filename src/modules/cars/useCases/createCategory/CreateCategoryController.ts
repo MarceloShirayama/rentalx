@@ -7,11 +7,11 @@ export class CreateCategoryController {
     this.createCategoryUseCase = createCategoryUseCase
   }
 
-  handle (req: Request, res: Response): Response {
+  async handle (req: Request, res: Response): Promise<Response> {
     const { name, description } = req.body
 
     try {
-      this.createCategoryUseCase.execute({ name, description })
+      await this.createCategoryUseCase.execute({ name, description })
 
       return res.status(201).json({ message: `Category ${name} created successfully` })
     } catch (error) {

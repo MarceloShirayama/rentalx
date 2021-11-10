@@ -7,8 +7,8 @@ export class CreateCategoryUseCase {
     this.categoriesRepository = categoriesRepository
   }
 
-  execute ({ name, description }: CategoryDataDTO): void {
-    const categoryAlreadyExists = this.categoriesRepository.findByName(name)
+  async execute ({ name, description }: CategoryDataDTO): Promise<void> {
+    const categoryAlreadyExists = await this.categoriesRepository.findByName(name)
 
     if (categoryAlreadyExists) {
       throw new Error(`Category ${name} already exists`)
